@@ -1,0 +1,79 @@
+.request__box
+	width: 100%
+	background: url("../img/request_bg.png") 0 0 no-repeat
+	position: relative
+	z-index: 2
+	margin-top: -5px
+	+box
+	+clr
+	.container
+		padding: 60px 0 55px 0
+		.info
+			color: rgb(225, 253, 255)
+			+regular
+			+reg
+			text-align: center
+			font-size: 29px
+			line-height: 36px
+			+box
+			+clr
+			margin-bottom: 43px
+			span
+				display: block
+				text-align: center
+				+bold
+				+boldw
+		.form
+			width: 100%
+			+box
+			+clr
+			.item
+				float: left
+				width: 33.3%
+				position: relative
+				input[type="text"]
+					width: 167px
+					height: 20px
+					background-color: white
+					+border-radius(3px)
+					padding: 22px 68px
+					color: rgba(27, 29, 39,0.64)
+					+regular
+					font-size: 18px
+					+reg
+				label
+					display: inline-block
+					margin-bottom: 0
+				label[for="names"]
+					content: ''
+					position: absolute
+					left: 25px
+					top: 50%
+					margin-top: -8px
+					width: 16px
+					height: 17px
+					background: url("../img/men.png") 0 0 no-repeat
+				label[for="telnos"]
+					content: ''
+					position: absolute
+					left: 25px
+					top: 50%
+					margin-top: -8px
+					width: 17px
+					height: 17px
+					background: url("../img/telno.png") 0 0 no-repeat
+				input[type="submit"]
+					+border-radius(3px)
+					width: 303px
+					height: 62px
+					background-color: rgb(244, 155, 57)
+					-webkit-box-shadow: 0px 3px 0px 0px rgba(181,113,41,1)
+					-moz-box-shadow: 0px 3px 0px 0px rgba(181,113,41,1)
+					box-shadow: 0px 3px 0px 0px rgba(181,113,41,1)
+					color: white
+					+geom
+					text-align: center
+					text-decoration: none
+					line-height: 56px
+					font-size: 16px
+					+boldw

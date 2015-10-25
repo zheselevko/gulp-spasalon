@@ -1,0 +1,164 @@
+.out
+	width: 100%
+.footer
+	width: 100%
+	height: 482px
+	z-index: 1
+	position: relative
+	background: url("../img/footer_bg.png") 0 0 no-repeat
+	.request__box
+		background: none
+		.container
+			padding: 50px 0 50px 0
+	.info_footer
+		width: 100%
+		height: 203px
+		float: left
+		background:  rgba(13,11,14,0.52)
+		.container
+			padding: 35px 0 0 0
+			.info
+				p
+					color: rgb(225, 253, 255)
+					+regular
+					font-size: 18px
+					+reg
+					line-height: 24px
+			.right
+				text-align: right
+.popup, #overlay
+	display: none
+	width: 100%
+	height: 100%
+	position: fixed
+	left: 0
+	top: 0
+	right: 0
+	bottom: 0
+	z-index: 4
+	background: url("../img/pop_up.png") repeat
+.popup_item
+	width: 678px
+	height: 702px
+	background-color: rgb(225, 253, 255)
+	position: absolute
+	left: 50%
+	margin-left: -339px
+	top: 50%
+	margin-top: -351px
+	+border-radius(2px)
+	.box
+		padding: 30px 35px
+		.tab_title
+			text-align: center
+			color: rgb(35, 32, 45)
+			+bold
+			+boldw
+			font-size: 36px
+			line-height: 30px
+			margin-bottom: 15px
+		.text
+			width: 100%
+			margin-bottom: 20px
+			+box
+			+clr
+			.images
+				margin-bottom: 10px
+				img
+					&:first-child
+						margin-right: 15px
+			.info_text
+				color: rgb(35, 32, 45)
+				+regular
+				font-size: 16px
+				+reg
+				line-height: 20px
+		.right_part
+			text-align: center
+			a
+				+border-radius(3px)
+				width: 177px
+				display: inline-block
+				height: 56px
+				background-color: rgb(244, 155, 57)
+				-webkit-box-shadow: 0px 3px 0px 0px rgba(181,113,41,1)
+				-moz-box-shadow: 0px 3px 0px 0px rgba(181,113,41,1)
+				box-shadow: 0px 3px 0px 0px rgba(181,113,41,1)
+				color: white
+				+geom
+				text-align: center
+				text-decoration: none
+				line-height: 56px
+				font-size: 16px
+				+boldw
+.close_popup, .modal_close
+	width: 44px
+	height: 44px
+	background: url("../img/close_btn.png") 0 0 no-repeat
+	position: absolute
+	right: -22px
+	top: -22px
+	cursor: pointer
+#callback
+	display: none
+	position: absolute
+	left: 50%
+	top: 50%
+	margin-top: -226px
+	margin-left: -262px
+	width: 524px
+	height: 452px
+	z-index: 5
+	background-color: rgb(225, 253, 255)
+	+border-radius(3px)
+	.box
+		padding: 45px 50px
+		.name
+			color: rgb(35, 32, 45)
+			text-align: center
+			+regular
+			line-height: 36px
+			font-size: 30px
+			font-weight: 400
+			margin-bottom: 35px
+			span
+				display: block
+				font-size: 36px
+				+bold
+				+boldw
+		form
+			.column
+				width: 100%
+				float: left
+				margin-bottom: 6px
+				text-align: center
+				input
+					width: 385px
+					height: 14px
+					background-color: white
+					+border-radius(4px)
+					padding: 22px 15px
+					color: rgba(27, 29, 39,0.64)
+					+geom
+					font-size: 18px
+					+reg
+			.button
+				text-align: center
+				margin-top: 24px
+				float: left
+				width: 100%
+				input
+					+border-radius(4px)
+					width: 415px
+					height: 85px
+					background-color: rgb(244, 155, 57)
+					-webkit-box-shadow: 0px 6px 0px 0px rgba(181,113,41,1)
+					-moz-box-shadow: 0px 6px 0px 0px rgba(181,113,41,1)
+					box-shadow: 0px 6px 0px 0px rgba(181,113,41,1)
+					color: white
+					+geom
+					font-size: 24px
+					+boldw
+
+input[type="text"]
+	-webkit-appearance: none

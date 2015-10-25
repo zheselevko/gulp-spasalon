@@ -1,0 +1,104 @@
+.send_request
+	width: 100%
+	height: 371px
+	position: relative
+	z-index: 2
+	margin-top: -6px
+	background: url("../img/f_bg.png") 0 0 no-repeat
+	.container
+		padding: 55px 0 0 0
+		.item
+			.box
+				background: url("../img/lines.png") 0 0 no-repeat
+				width: 348px
+				height: 256px
+				padding: 20px 0 0 0
+				color: white
+				+regular
+				font-size: 27px
+				+reg
+				line-height: 35px
+				.h1
+					color: white
+					+bold
+					+boldw
+					font-size: 44px
+					line-height: 55px
+				.h2
+					+bold
+					font-size: 38px
+					+boldw
+					line-height: 50px
+				.color
+					color: rgb(244, 155, 57)
+					+bold
+					font-size: 56px
+					+boldw
+					line-height: 75px
+			.form
+				padding-top: 10px
+				+box
+				+clr
+				.col
+					float: left
+					width: 100%
+					position: relative
+					margin-bottom: 9px
+					input[type="text"]
+						width: 231px
+						height: 18px
+						background-color: white
+						+border-radius(3px)
+						padding: 22px 68px
+						color: rgba(27, 29, 39,0.64)
+						+regular
+						font-size: 18px
+						+reg
+					label
+						display: inline-block
+						margin-bottom: 0
+					label[for="fname"]
+						content: ''
+						position: absolute
+						left: 25px
+						top: 50%
+						margin-top: -8px
+						width: 16px
+						height: 17px
+						background: url("../img/men.png") 0 0 no-repeat
+					label[for="ftel"]
+						content: ''
+						position: absolute
+						left: 25px
+						top: 50%
+						margin-top: -8px
+						width: 17px
+						height: 17px
+						background: url("../img/telno.png") 0 0 no-repeat
+				.button
+					width: 100%
+					float: left
+					margin-top: 24px
+					input[type="submit"]
+						+border-radius(3px)
+						width: 367px
+						height: 72px
+						background-color: rgb(244, 155, 57)
+						-webkit-box-shadow: 0px 6px 0px 0px rgba(181,113,41,1)
+						-moz-box-shadow: 0px 6px 0px 0px rgba(181,113,41,1)
+						box-shadow: 0px 6px 0px 0px rgba(181,113,41,1)
+						color: white
+						+geom
+						text-align: center
+						text-decoration: none
+						line-height: 56px
+						font-size: 24px
+						+boldw
+.left
+	float: left
+	width: 410px
+	margin-left: 67px
+.right
+	float: right
+	width: 370px
+	margin-right: 28px

@@ -1,0 +1,139 @@
+$icons: (0:0)
+$icons: map-merge($icons,(action: (X: -291px, Y:-56px, W: 93px, H: 93px, TW: 471px, TH: 246px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(ban: (X: -194px, Y:-153px, W: 93px, H: 93px, TW: 471px, TH: 246px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(call: (X: -417px, Y:-93px, W: 21px, H: 21px, TW: 471px, TH: 246px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(climat: (X: -194px, Y:-56px, W: 93px, H: 93px, TW: 471px, TH: 246px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(codedby: (X: -417px, Y:-127px, W: 47px, H: 5px, TW: 471px, TH: 246px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(coderiver: (X: -417px, Y:-118px, W: 49px, H: 5px, TW: 471px, TH: 246px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(drug: (X: -97px, Y:-153px, W: 93px, H: 93px, TW: 471px, TH: 246px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(eco: (X: 0px, Y:-56px, W: 93px, H: 93px, TW: 471px, TH: 246px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(fliter: (X: 0px, Y:-153px, W: 93px, H: 93px, TW: 471px, TH: 246px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(logo: (X: 0px, Y:0px, W: 471px, H: 52px, TW: 471px, TH: 246px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(mail: (X: -425px, Y:-56px, W: 34px, H: 22px, TW: 471px, TH: 246px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(map: (X: -388px, Y:-93px, W: 25px, H: 39px, TW: 471px, TH: 246px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(spa: (X: -97px, Y:-56px, W: 93px, H: 93px, TW: 471px, TH: 246px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(telephone: (X: -388px, Y:-56px, W: 33px, H: 33px, TW: 471px, TH: 246px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(venik: (X: -291px, Y:-153px, W: 93px, H: 93px, TW: 471px, TH: 246px, IMG: '../img/icons.png')))
+
+
+// Gets an attribute from the sass map
+@function icon-attr($icon, $attr)
+	$icon: map-get($icons, $icon)
+	@return map-get($icon, $attr)
+
+@mixin sprite($iconName)
+	background-image: url(icon-attr($iconName, IMG))
+	width: icon-attr($iconName, W)
+	height: icon-attr($iconName, H)
+	background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+
+@mixin sprite-retina($iconName)
+	background-image: url(icon-attr($iconName, IMG))
+	$width: icon-attr($iconName, W)
+	$height: icon-attr($iconName, H)
+	width: $width/2
+	height: $height/2
+	$x: icon-attr($iconName, X)
+	$y: icon-attr($iconName, Y)
+	background-position: $x/2 $y/2
+	$tw: icon-attr($iconName, TW) 	
+	$th: icon-attr($iconName, TH)
+	background-size: $tw/2 $th/2  	
+
+
+@mixin s($i)
+	+sprite($i)
+
+@mixin sr($i)
+	+sprite-retina($i)	
+
+//
+.icon-action
+	width: 93px
+	height: 93px
+	background-image: url('../img/icons.png')
+	background-position: -291px -56px
+
+.icon-ban
+	width: 93px
+	height: 93px
+	background-image: url('../img/icons.png')
+	background-position: -194px -153px
+
+.icon-call
+	width: 21px
+	height: 21px
+	background-image: url('../img/icons.png')
+	background-position: -417px -93px
+
+.icon-climat
+	width: 93px
+	height: 93px
+	background-image: url('../img/icons.png')
+	background-position: -194px -56px
+
+//.icon-codedby
+//	width: 47px
+//	height: 5px
+//	background-image: url('../img/icons.png')
+//	background-position: -417px -127px
+//
+//.icon-coderiver
+//	width: 49px
+//	height: 5px
+//	background-image: url('../img/icons.png')
+//	background-position: -417px -118px
+//
+.icon-drug
+	width: 93px
+	height: 93px
+	background-image: url('../img/icons.png')
+	background-position: -97px -153px
+
+.icon-eco
+	width: 93px
+	height: 93px
+	background-image: url('../img/icons.png')
+	background-position: 0px -56px
+
+.icon-fliter
+	width: 93px
+	height: 93px
+	background-image: url('../img/icons.png')
+	background-position: 0px -153px
+
+.icon-logo
+	width: 471px
+	height: 52px
+	background-image: url('../img/icons.png')
+	background-position: 0px 0px
+
+.icon-mail
+	width: 34px
+	height: 22px
+	background-image: url('../img/icons.png')
+	background-position: -425px -56px
+
+.icon-map
+	width: 25px
+	height: 39px
+	background-image: url('../img/icons.png')
+	background-position: -388px -93px
+
+.icon-spa
+	width: 93px
+	height: 93px
+	background-image: url('../img/icons.png')
+	background-position: -97px -56px
+
+.icon-telephone
+	width: 33px
+	height: 33px
+	background-image: url('../img/icons.png')
+	background-position: -388px -56px
+
+.icon-venik
+	width: 93px
+	height: 93px
+	background-image: url('../img/icons.png')
+	background-position: -291px -153px

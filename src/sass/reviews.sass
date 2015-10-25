@@ -1,0 +1,107 @@
+.reviews
+	width: 100%
+	background: url("../img/rev_bg.png") 0 0 no-repeat
+
+	+box
+	+clr
+	position: relative
+	z-index: 1
+	margin-top: -4px
+	.container
+		padding: 55px 0 50px 0
+		width: 965px
+		.title
+			margin-bottom: 75px
+		.reviews__list
+			width: 970px
+			overflow: hidden
+			height: 516px
+			+box
+			+clr
+			.item
+				float: left
+				width: 100%
+				margin-bottom: 30px
+				.box
+					width: 922px
+					height: 228px
+					background-color: rgb(238, 248, 255)
+					float: right
+					position: relative
+					.image
+						width: 176px
+						height: 176px
+						border: 10px solid rgb(244, 155, 57)
+						position: absolute
+						top: 15px
+						img
+							position: absolute
+							top: 15px
+					.content
+						float: left
+						padding-top: 20px
+						width: 660px
+						.name
+							color: rgb(27, 29, 39)
+							+bold
+							+boldw
+							font-size: 20px
+							line-height: 24px
+							margin-bottom: 10px
+						.text
+							text-align: left
+							color: rgb(27, 29, 39)
+							+regular
+							+reg
+							font-size: 16px
+							line-height: 22px
+							margin-bottom: 2px
+						.whois
+							color: rgba(27, 29, 39,0.67)
+							+italic
+							font-size: 16px
+							font-style: italic
+							line-height: 22px
+			.lt
+				.box
+					.image
+						left: -38px
+						img
+							left: 15px
+					.content
+						padding-left: 210px
+			.rt
+				.box
+					float: left
+					.image
+						right: -38px
+						img
+							right: 15px
+					.content
+						padding-left: 30px
+		.to-slide
+			+border-radius(3px)
+			width: 372px
+			height: 78px
+			background-color: rgb(244, 155, 57)
+			-webkit-box-shadow: 0px 6px 0px 0px rgba(181,113,41,1)
+			-moz-box-shadow: 0px 6px 0px 0px rgba(181,113,41,1)
+			box-shadow: 0px 6px 0px 0px rgba(181,113,41,1)
+			color: white
+			+bold
+			text-align: center
+			text-decoration: none
+			font-size: 24px
+			+boldw
+			display: block
+			line-height: 78px
+			margin: 0 auto
+.inner
+	width: 20000em
+	position: relative
+	left: 0
+	transition: all .5s
+	.slide
+		width: 970px
+		float: left
+		overflow: hidden

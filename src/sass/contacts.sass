@@ -1,0 +1,51 @@
+.contacts
+	width: 100%
+	height: 265px
+	background: url("../img/cont_bg.png") 0 0 no-repeat
+	position: relative
+	z-index: 2
+	margin-top: -5px
+	.container
+		padding: 55px 0 0 0
+		.title
+			margin-bottom: 40px
+		.box
+			width: 100%
+			+box
+			+clr
+			.item
+				float: left
+				width: 33.3%
+				.wrap
+					width: 250px
+					height: 55px
+					position: relative
+					padding: 20px 30px
+					[class^="icon-"]
+						position: absolute
+						left: 30px
+						top: 0
+					.icon-map
+						top: 20px
+					.icon-telephone
+						top: 28px
+					.icon-mail
+						top: 31px
+					.content
+						padding-left: 50px
+						color: rgb(27, 29, 39)
+						+regular
+						+reg
+						font-size: 18px
+						line-height: 24px
+						span
+							+bold
+							+boldw
+.add
+	background: url("../img/address.png") 0 0 no-repeat
+.em
+	background: url("../img/em.png") 0 0 no-repeat
+.ph
+	background: url("../img/ph.png") 0 0 no-repeat
+.map
+	height: 407px
